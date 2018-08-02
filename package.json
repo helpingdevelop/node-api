@@ -1,0 +1,23 @@
+{
+  "name": "node-api",
+  "version": "0.0.1",
+  "description": "This is a simple yet scalable API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helpingdevelop/node-api.git"
+  },
+  "author": "Joseph Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/helpingdevelop/node-api/issues"
+  },
+  "homepage": "https://github.com/helpingdevelop/node-api#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

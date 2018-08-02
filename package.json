@@ -1,12 +1,12 @@
 {
-  "name": "node-api",
+  "name": "api",
   "version": "0.0.1",
-  "description": "This is a simple yet scalable API.",
+  "description": "scalable API.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=development node app/server.js",
-    "start:prod": "NODE_ENV=production node app/server.js"
+    "start": "NODE_ENV=development node ./app/server.js",
+    "start:prod": "NODE_ENV=production node ./app/server.js"
   },
   "repository": {
     "type": "git",

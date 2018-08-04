@@ -1,22 +1,10 @@
+const userController = require('../controllers/user');
+
 module.exports = (app) => {
   app.route('/api/v1/user')
-    .get((req, res) => {
-      return res.json({
-        name: 'Joseph Smith',
-        age: 23
-      });
-    })
-    .post((req, res) => {
-      const name = req.body.name;
+    .get(userController.getUser)
+    .post(userController.whichUser)
 
-      if (!name) {
-        return res.status(422).json({
-          message: 'You need to supply a name.'
-        });
-      }
-
-      return res.json({
-        message: `Your name is ${name}`
-      });
-    })
+  app.route('/api/v1/user/:userId')
+    .post(userController.update)
 };

@@ -1,7 +1,7 @@
 # Node API
 Tutorial going over the basics of creating and setting up a node API.
 
-## Requirments
+## Requirements
 - Basic understanding of Javascript
 - [Node installed on your machine](https://nodejs.org/en/)
 

@@ -25,5 +25,7 @@ app.listen(process.env.PORT, (err) => {
     process.exit(1);
   }
 
+  require('./utils/db');
+
   console.log(`Server is now running in ${process.env.NODE_ENV} on port ${process.env.PORT}`);
 });

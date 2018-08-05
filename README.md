@@ -1,7 +1,7 @@
 # Node API
 Tutorial going over the basics of creating and setting up a node API.
 
-## Requirments
+## Requirements
 - Basic understanding of Javascript
 - [Node installed on your machine](https://nodejs.org/en/)
 
@@ -9,7 +9,7 @@ Tutorial going over the basics of creating and setting up a node API.
 - [Lesson 1 - Setting up an express server](https://www.youtube.com/watch?v=XTGikZFJW0w)
 - [Lesson 2 - Understanding and using enviroment variables](https://www.youtube.com/watch?v=P7vuqhfb1WA)
 - [Lesson 3 - Setting up and understanding routing](https://www.youtube.com/watch?v=A4skYG6sPSQ)
-- Lesson 4 - Setting up and using controllers
+- [Lesson 4 - Setting up and using controllers](https://www.youtube.com/watch?v=f6mnX_MSpJ8)
 - Lesson 5 - Connecting to a database (MongoDB)
 - Lesson 6 - Setting up and using models
 - You decide!

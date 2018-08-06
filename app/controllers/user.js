@@ -1,33 +1,22 @@
+const User = require('../models/user');
+
 /**
  * Collect the users information
  * 
  * @param {object} req The request object
  * @param {object} res The response object
  */
-const getUser = (req, res) => {
-  return res.json({
-    name: 'Joseph Smith',
-    age: 23
-  });
-};
-
-/**
- * Which user is making the request?
- * 
- * @param {object} req The request object
- * @param {object} res The response object
- */
-const whichUser = (req, res) => {
-  const name = req.body.name;
-
-  if (!name) {
-    return res.status(422).json({
-      message: 'You need to supply a name.'
+const getUsers = (req, res) => {
+  User.find({}).then((users) => {
+    return res.json({
+      message: 'The users where successfully collected',
+      users
     });
-  }
-
-  return res.json({
-    message: `Your name is ${name}`
+  }).catch((error) => {
+    return res.status(422).json({
+      message: 'There was an error collecting the users',
+      error
+    });
   });
 };
 
@@ -37,15 +26,21 @@ const whichUser = (req, res) => {
  * @param {object} req The request object
  * @param {object} res The response object
  */
-const update = (req, res) => {
+const updateUser = (req, res) => {
   const userId = req.params.userId;
-  return res.json({
-    message: 'The user you want to update is ' + userId
-  })
+  User.findOne({_id: userId}).update({name: req.body.name}).then((success) => {
+    return res.json({
+      message: 'The user has been updated'
+    });
+  }).catch((error) => {
+    return res.status(422).json({
+      message: 'There was an error collecting the users',
+      error
+    });
+  });
 };
 
 module.exports = {
-  getUser,
-  whichUser,
-  update
+  getUsers,
+  updateUser
 };

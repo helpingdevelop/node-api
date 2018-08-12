@@ -13,6 +13,8 @@ Tutorial going over the basics of creating and setting up a node API.
 - [Lesson 4 - Setting up and using controllers](https://www.youtube.com/watch?v=f6mnX_MSpJ8)
 - [Lesson 5 - Connecting to a database (MongoDB)](https://www.youtube.com/watch?v=OO4zOOOf1QQ)
 - [Lesson 6 - Setting up and using models](https://www.youtube.com/watch?v=UQt6NyDnX7w)
+- [Lesson 7 - Whats next?](https://www.youtube.com/watch?v=_F1m_06JVU4)
+- [Lesson 8 - CORS, what is it and how is it used](https://www.youtube.com/watch?v=x_Z6iYY5ibc)
 - [You decide!](https://www.youtube.com/watch?v=_F1m_06JVU4)
 
 ## Questions + Help
